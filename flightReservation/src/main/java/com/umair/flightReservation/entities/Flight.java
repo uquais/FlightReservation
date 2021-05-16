@@ -9,7 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Flight {
+public class Flight extends AbstractEntity{
 	private String flightNumber;
 	private String operatingAirlines;
 	private String departureCity;
@@ -17,17 +17,6 @@ public class Flight {
 	private Date dateOfDeparture;
 	private Timestamp estimatedDepartureTime;
 	
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
-
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
 	public String getFlightNumber() {
 		return flightNumber;
 	}

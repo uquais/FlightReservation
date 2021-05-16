@@ -1,4 +1,4 @@
-package com.umair.flightReservation.services;
+ package com.umair.flightReservation.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,8 +28,10 @@ public class ReservationServiceImpl implements ReservationService {
 		//Make Payment
 		
 		
-		Long flightId= request.getFligthId();
+		Long flightId= request.getFlightId();
 		Flight flight= flightRepository.findById(flightId).get();
+		
+		
 		Passenger passenger=new Passenger();
 		passenger.setFirstName(request.getPassengerFirstName());
 		passenger.setLastName(request.getPassengerLastName());

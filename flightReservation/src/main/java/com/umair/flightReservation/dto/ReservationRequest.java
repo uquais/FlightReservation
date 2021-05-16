@@ -1,8 +1,8 @@
 package com.umair.flightReservation.dto;
 
-public class ReservationRequest {
+public class ReservationRequest{
 	
-	private Long fligthId;
+	private Long flightId;
 	private String passengerFirstName;
 	private String passengerLastName;
 	private String passengerEmail;
@@ -11,11 +11,13 @@ public class ReservationRequest {
 	private String cardNumber;
 	private String expirationDate;
 	private String secirityCode;
-	public Long getFligthId() {
-		return fligthId;
+	
+	
+	public Long getFlightId() {
+		return flightId;
 	}
-	public void setFligthId(Long fligthId) {
-		this.fligthId = fligthId;
+	public void setFlightId(Long flightId) {
+		this.flightId = flightId;
 	}
 	public String getPassengerFirstName() {
 		return passengerFirstName;

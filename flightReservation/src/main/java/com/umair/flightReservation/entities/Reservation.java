@@ -1,17 +1,20 @@
 package com.umair.flightReservation.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
 
 @Entity
 public class Reservation extends AbstractEntity{
 	
+	@Column(name="CHECKED_IN")
 	private boolean checkIn;
 	private int numberOfBags;
 	@OneToOne
 	private Passenger passenger;
 	@OneToOne
 	private Flight flight;
+	
 	public boolean isCheckIn() {
 		return checkIn;
 	}

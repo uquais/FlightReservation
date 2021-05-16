@@ -27,7 +27,7 @@ Name on the Card<input type="text" name="nameOnTheCard"/>
 Card number<input type="text" name="cardNumber"/>
 ExpiryDate<input type="text" name="expirationDate">
 Three digit sec code <input type="text" name="securityCode"/>
-<input type="hidden" name="flightId" value="${flight.Id}"/>
+<input type="hidden" name="flightId" value="${flight.id}"/>
 <input type="submit" value="confirm"/>
 </pre>
 </form>
